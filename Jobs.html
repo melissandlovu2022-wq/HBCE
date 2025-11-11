@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers at Honeybee Enterprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="bee"></div>
+<div class="bee">
+   🐝 
+</div>
+<div class="bee">
+   🐝 
+</div>
+<div class="bee">
+   🐝 
+</div>
+<div class="bee">🐝</div>
+    <div class="container">
+      <h1>Join the Hive</h1>
+      <p>We're hiring <strong>Cleaners</strong> and <strong>Gardeners</strong> to help us grow!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="application-section">
+      <h2>Apply Now</h2>
+      <form id="jobApplicationForm" action="#" method="post" enctype="multipart/form-data" novalidate>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+<br>
+        <div class="form-group">
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" name="surname" required>
+        </div>
+<br>
+        <div class="form-group">
+          <label for="idNumber">ID Number</label>
+          <input type="text" id="idNumber" name="idNumber" pattern="\d{13}" title="Enter a valid 13-digit South African ID" required>
+        </div>
+<br>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="18" max="65" required>
+        </div>
+<br>
+        <div class="form-group">
+          <label for="ethnicity">Ethnicity</label>
+          <select id="ethnicity" name="ethnicity" required>
+            <option value="">Select...</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Coloured">Coloured</option>
+            <option value="Indian/Asian">Indian/Asian</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+<br>
+        <div class="form-group">
+          <label for="cv">Upload CV</label>
+          <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+        </div>
+<br>
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Honeybee Enterprise. All rights reserved.</p>
+  </footer>
+</body>
+</html>

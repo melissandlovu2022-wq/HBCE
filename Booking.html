@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Cleaning Services | Honeybee Cleaning Enterprise</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #f5a623;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #f5a623;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #e5941f;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Book a Cleaning</h1>
+    <form action="mailto:honeybeecleaningenterprise@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone">
+
+      <label for="service">Service Type</label>
+      <select id="service" name="Service">
+        <option value="Home Cleaning">Home Cleaning</option>
+        <option value="Office Cleaning">Office Cleaning</option>
+        <option value="Deep Cleaning">Deep Cleaning</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="Preferred Date">
+
+      <label for="message">Additional Details / Inquiry</label>
+      <textarea id="message" name="Message"></textarea>
+
+      <button type="submit">Send Booking Request</button>
+    </form>
+    <div class="footer">
+      We'll get back to you within 24 hours. Thank you for choosing Honeybee Cleaning Enterprise!
+    </div>
+  </div>
+</body>
+</html>
