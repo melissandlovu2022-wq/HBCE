@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book & Pay - Honeybee Cleaning Enterprise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#fff;color:#000;">
+
+  <!-- Header -->
+  <header style="background:#000;padding:15px 30px;display:flex;align-items:center;justify-content:space-between;">
+    <img src="IMG_2627.JPG" alt="Honeybee Logo" style="height:60px;">
+    <nav>
+      <a href="index.html" style="color:#FFD700;margin:0 15px;text-decoration:none;font-weight:bold;">Home</a>
+      <a href="about.html" style="color:#FFD700;margin:0 15px;text-decoration:none;font-weight:bold;">About</a>
+      <a href="services.html" style="color:#FFD700;margin:0 15px;text-decoration:none;font-weight:bold;">Services</a>
+      <a href="booking.html" style="color:#FFD700;margin:0 15px;text-decoration:none;font-weight:bold;">Book & Pay</a>
+      <a href="contact.html" style="color:#FFD700;margin:0 15px;text-decoration:none;font-weight:bold;">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section style="background:url('booking-bg.jpg') center/cover no-repeat;height:60vh;display:flex;justify-content:center;align-items:center;text-align:center;">
+    <div style="background:rgba(0,0,0,0.6);padding:40px;border-radius:10px;">
+      <h1 style="font-size:3em;color:#FFD700;margin:0;">Book & Pay</h1>
+      <p style="color:#fff;font-size:1.2em;margin-top:15px;">Securely book your premium cleaning service</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section style="padding:60px;text-align:center;">
+    <form style="max-width:600px;margin:auto;text-align:left;background:#fff;padding:30px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <label style="display:block;margin-bottom:10px;color:#000;">Full Name:</label>
+      <input type="text" name="fullname" required style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #ccc;border-radius:5px;">
+      
+      <label style="display:block;margin-bottom:10px;color:#000;">Email:</label>
+      <input type="email" name="email" required style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #ccc;border-radius:5px;">
+      
+      <label style="display:block;margin-bottom:10px;color:#000;">Phone Number:</label>
+      <input type="text" name="phone" required style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #ccc;border-radius:5px;">
+      
+      <label style="display:block;margin-bottom:10px;color:#000;">Service Date:</label>
+      <input type="date" name="date" required style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #ccc;border-radius:5px;">
+      
+      <label style="display:block;margin-bottom:10px;color:#000;">Select Service:</label>
+      <select name="service" style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #ccc;border-radius:5px;">
+        <option>Luxury Residential Cleaning</option>
+        <option>Executive Office Cleaning</option>
+        <option>Estate & Garden Care</option>
+        <option>Deep Fabric & Upholstery</option>
+      </select>
+      
+      <!-- PayFast Payment Form -->
+<form action="https://www.payfast.co.za/eng/process" method="post">
+  <!-- Merchant Details -->
+  <input type="hidden" name="merchant_id" value="33382455">
+  <input type="hidden" name="merchant_key" value="yxvnisOzyfcpk">
+  
+  <!-- Transaction Details -->
+  <input type="hidden" name="return_url" value="https://yourwebsite.co.za/success.html">
+  <input type="hidden" name="cancel_url" value="https://yourwebsite.co.za/cancel.html">
+  <input type="hidden" name="notify_url" value="https://yourwebsite.co.za/notify.php">
+  
+  <!-- Customer Details -->
+  <label style="color:#000;">Full Name:</label>
+  <input type="text" name="name_first" required style="width:100%;padding:10px;margin-bottom:15px;">
+  
+  <label style="color:#000;">Surname:</label>
+  <input type="text" name="name_last" required style="width:100%;padding:10px;margin-bottom:15px;">
+  
+  <label style="color:#000;">Email:</label>
+  <input type="email" name="email_address" required style="width:100%;padding:10px;margin-bottom:15px;">
+  
+  <!-- Payment Amount -->
+  <label style="color:#000;">Amount (ZAR):</label>
+  <input type="text" name="amount" required style="width:100%;padding:10px;margin-bottom:15px;">
+  
+  <!-- Item Description -->
+  <input type="hidden" name="item_name" value="Honeybee Cleaning Service">
+  
+  <!-- PayFast Button -->
+  <button type="submit" style="background:#FFD700;color:#000;padding:12px 25px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">
+    Pay Securely with PayFast
+  </button>
+</form>
+</form>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#000;color:#FFD700;text-align:center;padding:30px;">
+    <p>Contact: honeybeecleaningenterprise@gmail.com | Phone: 0665607932</p>
+    <p style="margin-top:20px;font-size:14px;">© 2026 Honeybee Cleaning Enterprise. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
